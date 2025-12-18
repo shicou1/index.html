@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)file:///C:/nfc/index.html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CARD NFC VIP</title>
+
+<style>
+*{box-sizing:border-box}
+
+/* ===== BACKGROUND ===== */
+body{
+margin:0;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+background:radial-gradient(circle at top,#1b1b1b,#000);
+min-height:100vh;
+overflow-y:auto;
+display:flex;
+justify-content:center;
+color:#f5f5f5;
+/* ===== ANIMATED TEXT BACKGROUND ===== */
+.bg-text{
+position:fixed;
+inset:0;
+overflow:hidden;
+z-index:-1;
+pointer-events:none;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+align-content:center;
+justify-items:center;
+transform:rotate(-0deg);
+}
+
+.bg-text span{
+font-size:72px;
+font-weight:900;
+letter-spacing:3px;
+color:rgba(212,175,55,0.08); /* ذهبي شفاف */
+animation:float 3s linear infinite;
+}
+
+.bg-text span:nth-child(even){
+animation-duration:3s;
+}
+
+@keyframes float{
+from{ transform:translateY(-120%); }
+to{ transform:translateY(120%); }
+}
+}
+
+/* ===== APP ===== */
+.app{
+width:100%;
+max-width:420px;
+padding:24px 16px 60px;
+}
+
+/* ===== HEADER ===== */
+.header{
+text-align:center;
+}
+
+.avatar{
+width:140px;
+height:140px;
+margin:auto;
+border-radius:50%;
+object-fit: cover;
+background:#000;
+box-shadow:
+0 0 0 6px rgba(212,175,55,.25),
+0 25px 55px rgba(0,0,0,.8);
+}
+
+.header h1{
+margin:22px 0 6px;
+letter-spacing:3px;
+}
+
+.header p{
+margin:0;
+font-size:13px;
+letter-spacing:1px;
+color:#d4af37;
+}
+
+/* ===== SAVE CONTACT ===== */
+.save-contact{
+margin:36px 0;
+padding:20px;
+border-radius:26px;
+background:linear-gradient(135deg,#d4af37,#f5e38c,#b8962e);
+color:#000;
+font-weight:900;
+font-size:17px;
+text-align:center;
+text-decoration:none;
+display:block;
+box-shadow:
+0 20px 45px rgba(0,0,0,.7),
+inset 0 1px 0 rgba(255,255,255,.7);
+}
+
+/* ===== LIST ===== */
+.list{
+display:flex;
+flex-direction:column;
+gap:16px;
+}
+
+/* ===== CARD ===== */
+.card{
+background:rgba(255,255,255,.07);
+backdrop-filter:blur(20px);
+border-radius:28px;
+padding:20px 22px;
+box-shadow:
+0 14px 40px rgba(0,0,0,.7),
+inset 0 1px 0 rgba(255,255,255,.15);
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.left{
+display:flex;
+align-items:center;
+gap:16px;
+}
+
+.icon{
+width:50px;
+height:50px;
+border-radius:16px;
+background:linear-gradient(135deg,#d4af37,#f5e38c);
+color:#000;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:24px;
+box-shadow:0 10px 25px rgba(0,0,0,.6);
+}
+
+.card h2{
+margin:0;
+font-size:17px;
+letter-spacing:.6px;
+}
+
+/* ===== BUTTON ===== */
+.card a{
+padding:11px 20px;
+border-radius:16px;
+background:#0d0d0d;
+color:#d4af37;
+text-decoration:none;
+font-weight:800;
+border:1px solid rgba(212,175,55,.45);
+}
+
+/* ===== FOOTER ===== */
+.footer{
+text-align:center;
+margin-top:40px;
+font-size:12px;
+letter-spacing:1px;
+color:rgba(212,175,55,.85);
+}
+</style>
+</head>
+
+<body>
+  <div class="bg-text">
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+<span>N9FC</span><span>N9FC</span><span>N9FC</span><span>N9FC</span>
+</div>
+
+<div class="app">
+
+<div class="header">
+<img class="avatar" src="./CARD NFC VIP_files/logo nfc.png" alt="logo">
+<h1>CHAKIB HAMZA</h1>
+<p>• NFC VIP</p>
+</div>
+
+<!-- SAVE CONTACT (FULL VCARD) -->
+<a class="save-contact" href="data:text/vcard;charset=utf-8,%0ABEGIN:VCARD%0AVERSION:3.0%0AN:HMZ;CHAKIB;;;%0AFN:CHAKIB HMZ%0AORG:CHAKIB NFC%0ATITLE:Luxury NFC Digital Card%0ATEL;TYPE=CELL,VOICE:+213778106874%0AEMAIL;TYPE=INTERNET:chakibhmz8@gmail.com%0AURL;TYPE=Instagram:https://www.instagram.com/_shicou1%0AURL;TYPE=Snapchat:https://snapchat.com/t/GECeh336%0AURL;TYPE=Facebook:https://www.facebook.com/share/16entXpvvc%0ANOTE:Saved via VVVVIP NFC Card%0AEND:VCARD">
+💾 SAVE FULL CONTACT
+</a>
+
+<div class="list">
+
+<div class="card">
+<div class="left">
+<div class="icon">📞</div>
+<h2>Téléphone</h2>
+</div>
+<a href="tel:+213778106874">Appeler</a>
+</div>
+
+<div class="card">
+<div class="left">
+<div class="icon">📸</div>
+<h2>Instagram</h2>
+</div>
+<a href="https://www.instagram.com/_shicou1" target="_blank">Ouvrir</a>
+</div>
+
+<div class="card">
+<div class="left">
+<div class="icon">👻</div>
+<h2>Snapchat</h2>
+</div>
+<a href="https://snapchat.com/t/GECeh336" target="_blank">Ouvrir</a>
+</div>
+
+<div class="card">
+<div class="left">
+<div class="icon">📘</div>
+<h2>Facebook</h2>
+</div>
+<a href="https://www.facebook.com/share/16entXpvvc" target="_blank">Ouvrir</a>
+</div>
+
+<div class="card">
+<div class="left">
+<div class="icon">✉️</div>
+<h2>Email</h2>
+</div>
+<a href="mailto:chakibhmz8@gmail.com">Envoyer</a>
+</div>
+
+</div>
+
+<div class="footer">
+• CARD NFC • FULL CONTACT NFC •
+</div>
+
+</div>
+
+
+</body></html>
